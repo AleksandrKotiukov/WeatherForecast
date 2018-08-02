@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Погода</string>
+
+    <string name="town_name">Город:\u0020\u0020</string>
+    <string name="temperature">Температура:\u0020\u0020</string>
+    <string name="humidity">Влажность:\u0020\u0020</string>
+
+    <string name="exact_town">Санкт-Петербург</string>
+    <string name="exact_temperature">33 C</string>
+    <string name="exact_humidity">70%</string>
 </resources>
