@@ -1,5 +1,7 @@
 package co.evecon.weatherforecast;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,8 +32,26 @@ public class FirstActivity extends AppCompatActivity {
         humidityLayout = (LinearLayout) findViewById(R.id.humidityLayout);
         windSpeedLayout = (LinearLayout) findViewById(R.id.windSpeedLayout);
 
-        if (!weatherData.getShowTemperature()){temperatureLayout.setVisibility(View.INVISIBLE);}
-        if (!weatherData.getShowHumidity()){humidityLayout.setVisibility(View.INVISIBLE);}
-        if (!weatherData.getShowWindSpeed()){windSpeedLayout.setVisibility(View.INVISIBLE);}
+        if (!weatherData.getShowTemperature()) {
+            temperatureLayout.setVisibility(View.INVISIBLE);
+        }
+        if (!weatherData.getShowHumidity()) {
+            humidityLayout.setVisibility(View.INVISIBLE);
+        }
+        if (!weatherData.getShowWindSpeed()) {
+            windSpeedLayout.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public void onClickEmail(View view) {
+        switch (view.getId()) {
+            case R.id.buttonEmail:
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse("mailto:alex.kotyukov@yandex.ru"));
+                startActivity(emailIntent);
+                break;
+            default:
+                break;
+        }
     }
 }

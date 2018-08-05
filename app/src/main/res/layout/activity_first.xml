@@ -97,4 +97,13 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/buttonEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email"
+        android:onClick="onClickEmail"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="6dp" />
+
 </LinearLayout>

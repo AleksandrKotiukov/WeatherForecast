@@ -13,6 +13,7 @@
     <string name="exact_wind_speed">10 м/c</string>
 
     <string name="to_first_activity">Показать погоду</string>
+    <string name="send_email">Отправить по почте.</string>
 
     <string name="show_temperature">Отображать температуру?</string>
     <string name="show_humidity">Отображать влажность?</string>
