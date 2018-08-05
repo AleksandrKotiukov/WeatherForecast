@@ -38,4 +38,22 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="6dp" />
 
+    <CheckBox
+        android:id="@+id/temperatureBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_temperature"/>
+
+    <CheckBox
+        android:id="@+id/humidityBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_humidity"/>
+
+    <CheckBox
+        android:id="@+id/windSpeedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_windSpeed"/>
+
 </LinearLayout>

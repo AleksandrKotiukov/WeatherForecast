@@ -31,6 +31,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/temperatureLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -52,6 +53,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/humidityLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -68,6 +70,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/exact_humidity"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/windSpeedLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wind_speed"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/humidityData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exact_wind_speed"
             android:textSize="15sp" />
 
     </LinearLayout>
